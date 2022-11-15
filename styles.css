@@ -78,7 +78,7 @@ a {
   transition: all ease 0.5s;
 }
 
-/* ---------------------------------------------------- */
+/* ---------------------------------------------------- ------------*/
 #main {
   width: 100%;
   height: 100vh;
@@ -168,6 +168,9 @@ a {
   transform: translate(-7%, -50%);
   z-index: -1;
 }
+
+
+/* -------------------------------------------------------------------- */
 #introduction {
   display: flex;
   justify-content: center;
@@ -176,10 +179,10 @@ a {
   border-top: 1px solid #272729;
 }
 .info-card {
-  top: 80em;
+  top: 57em;
   position: absolute;
-  width: 777px;
-  height: 550px;
+  width: 850px;
+  height: 500px;
   background: linear-gradient(
     to right bottom,
     rgba(36, 40, 48, 0.4),
@@ -333,7 +336,7 @@ a {
   letter-spacing: 4px;
 }
 
-/* ----------- */
+/* -------------------------------------------------------------------- */
 #goals {
   display: flex;
   justify-content: center;
@@ -342,8 +345,64 @@ a {
   border-top: 1px solid #272729;
 }
 .card {
+  top: 1em;
+  position: relative;
+  width: 850px;
+  height: 550px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(36, 40, 48, 0.4),
+    rgba(36, 40, 48, 0.4)
+  );
+  backdrop-filter: blur(2.5rem);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+
+.card .details-goal{
   position: absolute;
-  width: 1000px;
+  width: 85%;
+  height: 20%;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #0f7ce2;
+  border-radius: 50px;
+}
+
+
+.card .details-goal h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.card .details-goal p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+  text-align: left;  
+}
+/* ---------------------------------------------------------- */
+#book{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-top: 1px solid #272729;
+}
+
+.book-box{
+  top: 1em;
+  position: relative;
+  width: 850px;
   height: 550px;
   background: linear-gradient(
     to right bottom,
@@ -358,25 +417,147 @@ a {
   backdrop-filter: blur(2rem);
 }
 
-.card .details-goal{
-    padding: 70px;
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(150px);
+.book-box:hover{
+  transform: translateY(-10px);
+}
+.book-type{
+  position: absolute;
+  width: 85%;
+  height: 20%;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #0f7ce2;
+  border-radius: 50px;
 }
 
-.card .details-goal h2 {
-    font-size: 1.25em;
-    font-weight: 600;
-    color: rgb(245, 239, 239);
-    line-height: 1.2em;
+.book-box h2{
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
 }
 
-.card .details-goal p {
-    color: #fff;
+.book-box p{
+  color: #fff;
   font-weight: 200;
   font-size: 14px;
-  text-align: left;  
+  text-align: left;
 }
 
+/* -------------------------------------------------------------------- */
+#str{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-top: 1px solid #272729; 
+}
+.str-box{
+  top: 1em;
+  position: relative;
+  width: 850px;
+  height: 550px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(36, 40, 48, 0.4),
+    rgba(36, 40, 48, 0.4)
+  );
+  backdrop-filter: blur(2.5rem);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+}
+
+.str-box{
+  transform: translateY(-10px);
+}
+.str-type{
+  position: absolute;
+  width: 85%;
+  height: 20%;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #0f7ce2;
+  border-radius: 50px;
+}
+
+.str-box h2{
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.str-box p{
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+#contact form {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact form input,
+textarea {
+  width: 100%;
+  height: 100%;
+  margin: 5px 0px;
+  padding: 10px;
+  border: 10px;
+  border: none;
+  outline: none;
+  background-color: #3731412d;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+#contact form textarea {
+  height: 250px;
+}
+
+#contact form input[type="submit"] {
+  height: 45px;
+  background: linear-gradient(90deg, #2065cc 20%, #3b58b8);
+  color: #ffffff;
+  text-transform: uppercase;
+}
