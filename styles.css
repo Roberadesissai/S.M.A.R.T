@@ -144,11 +144,14 @@ a {
 .smart-btn {
   background: linear-gradient(90deg, #2788e2 -20%, #3b58b8);
   margin-right: 30px;
+  border-radius: 30px;
+ 
 }
 
 .book {
   /* background: linear-gradient(90deg, #2788e2 -20%, #3b58b8);  */
   background-color: #242830;
+  border-radius: 30px;
 }
 
 .smart-btn:hover {
@@ -267,6 +270,7 @@ a {
 .info-card .content .details .actionBtn {
   display: flex;
   justify-content: space-around;
+
 }
 
 .info-card .content .details .actionBtn a {
@@ -277,14 +281,15 @@ a {
   align-items: center;
   text-transform: uppercase;
   color: #ffffff;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 2px 30px rgba(122, 122, 129, 0.315);
   letter-spacing: 1px;
   font-size: 0.9rem;
-  border-radius: 10px;
+  border-radius: 100px;
 }
 
 .message-btn {
   background-color: #242830;
+ 
 }
 
 .message-btn:hover {
@@ -313,7 +318,7 @@ a {
   );
   height: 20rem;
   width: 20rem;
-  border-radius: 50%;
+  border-radius: 10%;
   position: absolute;
 }
 
