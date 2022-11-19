@@ -145,7 +145,6 @@ a {
   background: linear-gradient(90deg, #2788e2 -20%, #3b58b8);
   margin-right: 30px;
   border-radius: 30px;
- 
 }
 
 .book {
@@ -270,7 +269,6 @@ a {
 .info-card .content .details .actionBtn {
   display: flex;
   justify-content: space-around;
-
 }
 
 .info-card .content .details .actionBtn a {
@@ -281,7 +279,6 @@ a {
   align-items: center;
   text-transform: uppercase;
   color: #ffffff;
-  box-shadow: 2px 2px 30px rgba(122, 122, 129, 0.315);
   letter-spacing: 1px;
   font-size: 0.9rem;
   border-radius: 100px;
@@ -289,7 +286,6 @@ a {
 
 .message-btn {
   background-color: #242830;
- 
 }
 
 .message-btn:hover {
@@ -373,7 +369,7 @@ a {
   position: absolute;
   width: 85%;
   height: 20%;
-  top: 130px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -393,13 +389,34 @@ a {
   font-size: 14px;
   text-align: left;
 }
+.card .details-goal img {
+  top: -310%;
+  left: 88%;
+  position: absolute;
+  transform: rotate(30deg);
+}
+.card .details-goal .img2 {
+  top: -15%;
+  left: -88%;
+  position: absolute;
+  transform: rotate(-1deg);
+}
+
 /* ---------------------------------------------------------- */
 #book {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   border-top: 1px solid #272729;
+}
+#book img {
+  top: 1%;
+  left: -11%;
+  position: absolute;
+  transform: rotate(-1deg);
+
 }
 
 .book-box {
@@ -418,6 +435,7 @@ a {
   transition: 0.5s;
   z-index: 2;
   backdrop-filter: blur(2rem);
+  z-index: 5;
 }
 
 .book-box:hover {
@@ -501,14 +519,25 @@ a {
   font-size: 14px;
   text-align: left;
 }
+#str img {
+  position: absolute;
+  top: 0;
+  left: 90%;
+}
 
 /* ------------------------------------------------------------------------- */
 #track {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   border-top: 1px solid #272729;
+}
+#track .pap {
+  position: absolute;
+  top: 1%;
+  left: 0%;
 }
 .track-box {
   top: 1em;
@@ -560,10 +589,7 @@ a {
   position: absolute;
   object-fit: cover;
 }
-.tra img 
-
-
-#contact {
+.tra img #contact {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -572,13 +598,86 @@ a {
   margin-top: 80px;
 }
 
+#learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border-top: 1px solid #272729;
+}
+.learn-box {
+  top: 1em;
+  position: relative;
+  width: 85%;
+  height: 550px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(36, 40, 48, 0.4),
+    rgba(36, 40, 48, 0.4)
+  );
+  backdrop-filter: blur(2.5rem);
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
+}
+
+.learn-box .tra {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  top: 4%;
+  left: 50%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(36, 40, 48, 0.4),
+    rgba(36, 40, 48, 0.4)
+  );
+  width: 550px;
+  height: 500px;
+  transform: translateX(-50%);
+  border-radius: 25px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 20px;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.learn-box.tra:hover {
+  transform: translateX(-50%);
+}
+
+.learn-box .tra p {
+  color: #fff;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.learn-box img {
+  position: absolute;
+  top: -6%;
+  left: 70%;
+}
+
 #contact {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 80px;
+}
+#contact img {
+  position: absolute;
+  left: 15%;
+  top: -90%;
 }
 
 #contact form {
